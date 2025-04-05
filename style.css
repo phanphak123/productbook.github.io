@@ -1,0 +1,885 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* ============================>> navbar <<======================= */
+.navbar{
+    width: 100%;
+    height: 50px;
+    
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 5px 1px gray;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+
+}
+
+.logo{
+    width: 20%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo > a{
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px gray;
+}
+
+.search{
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+input{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+.btn-search{
+    width: 70px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: gold;
+    
+}
+.btn-search:hover{
+    color: white;
+    background-color: blueviolet;
+}
+.stor{
+    width: 20%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    & i{
+        
+        font-size: 20px;
+        
+
+    }
+}
+
+
+
+
+
+/* ============================>> List a tage <<======================= */
+
+
+
+
+.list{
+    
+    width: 100%;
+    height: 40px;
+    background-color: rgb(13, 148, 83);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin-top: 50px;
+    z-index: 100;
+}
+ul{
+    display: flex;
+    gap: 40px;
+}
+li{
+    list-style: none;
+    padding: 10px 10px;
+    
+}
+li:hover{
+    background-color: rgb(79, 74, 83);
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    transition: 0.5s ease;
+    &:hover{
+        color: gold;
+        transition: 2s ease;
+    }
+}
+
+
+
+
+
+
+/* ============================>> Main-section <<======================= */
+
+
+.main-section{
+    width: 100%;
+    height: 100vh;
+
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: wheat;
+}
+.main-section > .left{
+    width: 40%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+   
+    
+  
+}
+.main-section > .left >h1{
+    font-size: 50px;
+}
+
+
+
+.main-section > .right{
+    width: 45%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-section > .right > img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+/* * ============================>> Main-section2 <<======================= */ */
+
+
+
+
+.main-section2{
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    background-color: blue;
+    
+}
+
+.main-section2 >.box{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: rgb(13, 148, 83);
+    margin: 100px 0px;
+}
+.main-section2 >.box > .box1{
+    width: 20%;
+    height: 50%;
+    
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.main-section2 >.box > .box2{
+    width: 20%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.box > .box2 > img{
+    width: 100%;
+    height: 100%;
+}
+.main-section2 >.box > .box3{
+    width: 20%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.box > .box3 > img{
+    width: 100%;
+    height: 100%;
+}
+.main-section2 >.box > .box4{
+    width: 20%;
+    height: 50%;
+    
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.box > .box4 > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/*  ============================>> ADD TO CART <<======================= */ */ */
+
+
+.Addcart{
+    width: 100%;
+    height: 50vh;
+    
+
+}
+.box-cart{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    
+    gap: 20px;
+    background-color: white;
+    color: rgb(13, 148, 83);
+}
+
+.box-cart >.box1{
+    width: 15%;
+    height: 90%;
+    padding: 5px 8px;
+    background-color: rgb(228, 228, 231);
+    text-align: center;
+    & img{
+        width: 100%;
+        height: 50%;
+    }
+    & .title{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    & h3{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+        margin-bottom: 20px;
+
+    }
+    & .btn-cart{
+        width: 100%;
+        height: 30px;
+        
+        
+        border-radius: 5px;
+        border: 0px;
+        background-color:rgb(13, 148, 83);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & button{
+            border-radius: 25px;
+            width: 100%;
+            height: 100%;
+            background-color:rgb(13, 148, 83);
+            border: 0px;
+            color: white;
+            &:hover{
+                background-color: rgb(43, 133, 21);
+            }
+        }
+    }
+}
+
+
+
+
+
+.box-cart >.box2{
+    width: 15%;
+    height: 90%;
+    padding: 5px 8px;
+    background-color: rgb(228, 228, 231);
+    text-align: center;
+    & img{
+        width: 100%;
+        height: 50%;
+    }
+    & .title{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    & h3{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+        margin-bottom: 20px;
+
+    }
+    & .btn-cart{
+        width: 100%;
+        height: 30px;
+        
+        
+        border-radius: 5px;
+        border: 0px;
+        background-color:rgb(13, 148, 83);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & button{
+            border-radius: 25px;
+            width: 100%;
+            height: 100%;
+            background-color:rgb(13, 148, 83);
+            border: 0px;
+            color: white;
+            &:hover{
+                background-color: rgb(43, 133, 21);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.box-cart >.box3{
+    width: 15%;
+    height: 90%;
+    padding: 5px 8px;
+    background-color: rgb(228, 228, 231);
+    text-align: center;
+    & img{
+        width: 100%;
+        height: 50%;
+    }
+    & .title{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    & h3{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+        margin-bottom: 20px;
+
+    }
+    & .btn-cart{
+        width: 100%;
+        height: 30px;
+        
+        
+        border-radius: 5px;
+        border: 0px;
+        background-color:rgb(13, 148, 83);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & button{
+            border-radius: 25px;
+            width: 100%;
+            height: 100%;
+            background-color:rgb(13, 148, 83);
+            border: 0px;
+            color: white;
+            &:hover{
+                background-color: rgb(43, 133, 21);
+            }
+        }
+    }
+}
+
+
+
+
+
+.box-cart >.box4{
+    width: 15%;
+    height: 90%;
+    padding: 5px 8px;
+    background-color: rgb(228, 228, 231);
+    text-align: center;
+    & img{
+        width: 100%;
+        height: 50%;
+    }
+    & .title{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    & h3{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+        margin-bottom: 20px;
+
+    }
+    & .btn-cart{
+        width: 100%;
+        height: 30px;
+        
+        
+        border-radius: 5px;
+        border: 0px;
+        background-color:rgb(13, 148, 83);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & button{
+            border-radius: 25px;
+            width: 100%;
+            height: 100%;
+            background-color:rgb(13, 148, 83);
+            border: 0px;
+            color: white;
+            &:hover{
+                background-color: rgb(43, 133, 21);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.box-cart >.box5{
+    width: 15%;
+    height: 90%;
+    padding: 5px 8px;
+    background-color: rgb(228, 228, 231);
+    text-align: center;
+    & img{
+        width: 100%;
+        height: 50%;
+    }
+    & .title{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    & h3{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+        margin-bottom: 20px;
+
+    }
+    & .btn-cart{
+        width: 100%;
+        height: 30px;
+        
+        
+        border-radius: 5px;
+        border: 0px;
+        background-color:rgb(13, 148, 83);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & button{
+            border-radius: 25px;
+            width: 100%;
+            height: 100%;
+            background-color:rgb(13, 148, 83);
+            border: 0px;
+            color: white;
+            &:hover{
+                background-color: rgb(43, 133, 21);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+/*  ============================>> CONTECT <<======================= */ */ */
+
+
+
+.contect{
+    width: 100%;
+    height: 60vh;
+    text-align: end;
+    
+}
+.contect-box{
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.141);
+    
+}
+
+
+
+
+
+/*  ============================>> CLIENT <<=======================  */
+
+.client{
+    width: 100%;
+    height: 80vh;
+    
+    
+}
+.client-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.client-box > .box1{
+    width: 20%;
+    height: 70%;
+    box-shadow: 1px 1px 10px 1px gray;
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+    & img{
+        width: 30%;
+        border-radius: 50px 50px;
+
+       
+    }
+    &:hover{
+        width: 23%;
+        height: 73%;
+        box-shadow: 1px 1px 10px 1px goldenrod;
+    }
+}
+.client-box > .box2{
+    width: 20%;
+    height: 70%;
+    background-color: beige;
+    text-align: center;
+    padding: 10px;
+    & img{
+        width: 30%;
+        border-radius: 50px 50px;
+
+       
+    }
+}
+.client-box > .box3{
+    width: 20%;
+    height: 70%;
+    background-color: beige;
+    text-align: center;
+    padding: 10px;
+    & img{
+        width: 30%;
+        border-radius: 50px 50px;
+
+       
+    }
+}
+
+
+
+
+
+
+/*  ============================>> Blogs <<=======================  */
+
+
+
+
+.blogs{
+    width: 100%;
+    height: 70vh;
+    
+    
+}
+.blogs-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+
+.blogs-box > .box1{
+    width: 20%;
+    height: 80%;
+    box-shadow: 1px 1px 10px 1px gray;
+    transition: 0.5s ease;
+    & img{
+        width: 100%;
+        height: 60%;
+    }
+    & .paragraph{
+        padding: 10px;
+    }
+    & button{
+        width: 100px;
+        height: 25px;
+        border-radius: 3px;
+        border: 0px;
+        background-color:rgb(13, 148, 83);
+        margin-top: 10px;
+        color: white;
+        &:hover{
+            background-color:rgba(80, 33, 201, 0.848);
+        }
+    }
+
+    &:hover{
+        width: 22%;
+        height: 72%;
+        box-shadow: 1px 1px 10px 1px goldenrod;
+    }
+   
+
+}
+
+
+
+.blogs-box > .box2{
+    width: 20%;
+    height: 80%;
+    box-shadow: 1px 1px 10px 1px gray;
+    & img{
+        width: 100%;
+        height: 60%;
+    }
+    & .paragraph{
+        padding: 10px;
+    }
+    & button{
+        width: 100px;
+        height: 25px;
+        border-radius: 3px;
+        border: 0px;
+        background-color:rgb(13, 148, 83);
+        margin-top: 10px;
+        color: white;
+        &:hover{
+            background-color:rgba(80, 33, 201, 0.848);
+        }
+    }
+
+    &:hover{
+        width: 22%;
+        height: 72%;
+        box-shadow: 1px 1px 10px 1px goldenrod;
+    }
+
+
+}
+
+
+.blogs-box > .box3{
+    width: 20%;
+    height: 80%;
+    box-shadow: 1px 1px 10px 1px gray;
+    & img{
+        width: 100%;
+        height: 60%;
+    }
+    & .paragraph{
+        padding: 10px;
+    }
+    & button{
+        width: 100px;
+        height: 25px;
+        border-radius: 3px;
+        border: 0px;
+        background-color:rgb(13, 148, 83);
+        margin-top: 10px;
+        color: white;
+        &:hover{
+            background-color:rgba(80, 33, 201, 0.848);
+        }
+    }
+
+
+    &:hover{
+        width: 22%;
+        height: 72%;
+        box-shadow: 1px 1px 10px 1px goldenrod;
+    }
+
+
+}
+
+
+
+
+
+
+/*  ============================>> Footer <<=======================  */
+
+
+.footer{
+    width: 100%;
+    height: 55vh;
+    background-color: gray;
+    margin-top: 20px;
+}
+.footer-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.footer-box > .box1{
+    width: 20%;
+    height: 70%;
+    color: rgba(255, 255, 255, 0.805);
+    
+    & p{
+        margin-top: 15px;
+    }
+}
+
+
+
+.footer-box > .box2{
+    width: 20%;
+    height: 70%;
+    color: rgba(255, 255, 255, 0.805);
+    & p{
+        margin-top: 15px;
+    }
+}
+
+
+
+.footer-box > .box3{
+    width: 20%;
+    height: 70%;
+    color: rgba(255, 255, 255, 0.805);
+    & p{
+        margin-top: 15px;
+    }
+}
+
+
+
+.footer-box > .box4{
+    width: 20%;
+    height: 70%;
+    color: rgba(255, 255, 255, 0.805);
+    & p{
+        margin-top: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

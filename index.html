@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>berger</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="first jq/jquery.min.js"></script>
+</head>
+<body>
+    
+
+<!-- ===========================>> navbar <<========================= -->
+
+
+<div class="navbar">
+    <div class="logo">
+        <a href=""><span><i class="fa-solid fa-book"></i> </span>LIBRARIA</a>
+    </div>
+    <div class="search">
+        <div class="form">
+            <form action="">
+                <input type="search" name="search" placeholder="Search here..." id="search">
+            </form>
+        </div>
+        <div class="submit">
+            <button class="btn-search">Search</button>
+        </div>
+    </div>
+    <div class="stor">
+        <i class="fa-solid fa-heart"></i> 
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-user"></i>
+    </div>
+</div>
+
+
+<!-- ===========================>> List <<========================= -->
+
+<div class="list">
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#addcart">Featured</a></li>
+        <li><a href="#contect">Arrivals</a></li>
+        <li><a href="#client">Reviews</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+    </ul>
+</div>
+
+<!-- ===========================>> main-section <<========================= -->
+<div class="main-section">
+    <div data-aos="fade-right" style="transition: 3s;">
+    <div class="left">
+        <h1 style="font-size: 50px;">Upto 55% offers</h1><br>
+        <small><p>Welcome To Bookly. Your one-Stop shop For Books. Discover Amazing Deals<br>And Explore A whide Rane of Titles Curated Just For You!</p></small>
+        <br><button class="btn-main" style="background-color: gold;border: 0px;width: 100px;height: 30px;border-radius: 5px;">Claim offers</button>
+    </div>
+
+    </div>
+
+    <div data-aos="fade-left" style="transition: 3s;">
+    <div class="right">
+        <img src="Image/historykhmer.jpg" style="width: 300px;">
+    </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- ===========================>> main-section2 <<========================= -->
+<div data-aos="fade-up" data-aos-duration="3000" style="transition: 3s;">
+
+    <div class="main-section2">
+        <div class="box">
+            <div class="box1">
+               <div class="icon">
+                <i class="fa-solid fa-truck"></i>
+               </div>
+               <div class="p">
+                    <h3>Free Shipping</h3>
+                    <small><p>on Order Above $50</p></small>
+               </div>
+            </div>
+            <div class="box2">
+                <div class="icon">
+                    <i class="fa-solid fa-truck"></i>
+                   </div>
+                   <div class="p">
+                        <h3>Secure Payments</h3>
+                        <small><p>Protected And Trusted</p></small>
+                   </div>
+            </div>
+            <div class="box3">
+                <div class="icon">
+                    <i class="fa-solid fa-truck"></i>
+                   </div>
+                   <div class="p">
+                        <h3>24/7 Support</h3>
+                        <small><p>Always Here For You.</p></small>
+                   </div>
+            </div>
+            <div class="box4">
+                <div class="icon">
+                    <i class="fa-solid fa-truck"></i>
+                   </div>
+                   <div class="p">
+                        <h3>Wide Selection</h3>
+                        <small><p>Books For All Ages.</p></small>
+                   </div>
+            </div>
+        </div>
+    </div>
+
+</div>   
+
+
+
+<!-- ===========================>> Add to cart <<========================= -->
+<div data-aos="fade-up" data-aos-duration="3000" style="transition: 3s;">
+    
+
+<div class="Addcart" id="addcart">
+    <h2 style="text-align: center;">Featured Book</h2><br><br>
+    
+    <div class="box-cart">
+        <div class="box1">
+            <img src="Image/historykhmer.jpg" alt="">
+            <h4 class="title">Featured Book </h4>
+            <h3>$15.99 <span><small><del><h5>$20.99</h5></del></small></span></h3> 
+            <div class="btn-cart" onclick="cart()">
+                <button >Add To Cart</button>
+
+            </div>
+           
+        </div>
+        <div class="box2">
+            <img src="Image/librariakhmer.jpg" alt="">
+            <h4 class="title">Featured Book </h4>
+            <h3>$15.99 <span><small><del><h5>$20.99</h5></del></small></span></h3> 
+            <div class="btn-cart" onclick="cart()">
+                <button >Add To Cart</button>
+
+            </div>
+           
+        </div>
+        <div class="box3">
+            <img src="Image/bookmind.jpg" alt="">
+            <h4 class="title">Featured Book </h4>
+            <h3>$15.99 <span><small><del><h5>$20.99</h5></del></small></span></h3> 
+            <div class="btn-cart" onclick="cart()">
+                <button >Add To Cart</button>
+
+            </div>
+           
+        </div>
+        <div class="box4">
+            <img src="Image/Angkorwat.jpg" alt="">
+            <h4 class="title">Featured Book </h4>
+            <h3>$15.99 <span><small><del><h5>$20.99</h5></del></small></span></h3> 
+            <div class="btn-cart" onclick="cart()">
+                <button >Add To Cart</button>
+
+            </div>
+           
+        </div>
+        <div class="box5">
+            <img src="Image/Asean.jpg" alt="">
+            <h4 class="title">Featured Book </h4>
+            <h3>$15.99 <span><small><del><h5>$20.99</h5></del></small></span></h3> 
+            <div class="btn-cart" onclick="cart()">
+                <button >Add To Cart</button>
+
+            </div>
+           
+        </div>
+        
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+ <div data-aos="fade-up" data-aos-duration="3000" style="transition: 3s;">
+
+    <div class="box-cart">
+        <div class="box1">
+            <img src="Image/mathgrad9.jpg" alt="">
+            <h4 class="title">Featured Book </h4>
+            <h3>$15.99 <span><small><del><h5>$20.99</h5></del></small></span></h3> 
+            <button class="btn-cart">Add To Cart</button>
+           
+        </div>
+        <div class="box2">
+            <img src="Image/minset.jpg" alt="">
+            <h4 class="title">Featured Book </h4>
+            <h3>$15.99 <span><small><del><h5>$20.99</h5></del></small></span></h3> 
+            <button class="btn-cart">Add To Cart</button>
+           
+        </div>
+        <div class="box3">
+            <img src="Image/THEPOWER.jpg" alt="">
+            <h4 class="title">Featured Book </h4>
+            <h3>$15.99 <span><small><del><h5>$20.99</h5></del></small></span></h3> 
+            <button class="btn-cart">Add To Cart</button>
+           
+        </div>
+        <div class="box4">
+            <img src="Image/librariakhmer.jpg" alt="">
+            <h4 class="title">Featured Book </h4>
+            <h3>$15.99 <span><small><del><h5>$20.99</h5></del></small></span></h3> 
+            <button class="btn-cart">Add To Cart</button>
+           
+        </div>
+        <div class="box5">
+            <img src="Image/thegogiver.jpg" alt="">
+            <h4 class="title">Featured Book </h4>
+            <h3>$15.99 <span><small><del><h5>$20.99</h5></del></small></span></h3> 
+            <button class="btn-cart">Add To Cart</button>
+           
+        </div>
+        
+    </div>
+ </div>
+
+
+
+
+
+
+
+
+ <div data-aos="fade-up" data-aos-duration="3000" style="transition: 3s;">
+    <div class="box-cart">
+        <div class="box1">
+            <img src="Image/beinghappy.jpg" alt="">
+            <h4 class="title">Featured Book </h4>
+            <h3>$15.99 <span><small><del><h5>$20.99</h5></del></small></span></h3> 
+            <button class="btn-cart">Add To Cart</button>
+           
+        </div>
+        <div class="box2">
+            <img src="Image/positive.jpg" alt="">
+            <h4 class="title">Featured Book </h4>
+            <h3>$15.99 <span><small><del><h5>$20.99</h5></del></small></span></h3> 
+            <button class="btn-cart">Add To Cart</button>
+           
+        </div>
+        <div class="box3">
+            <img src="Image/mindsetmagic.jpg" alt="">
+            <h4 class="title">Featured Book </h4>
+            <h3>$15.99 <span><small><del><h5>$20.99</h5></del></small></span></h3> 
+            <button class="btn-cart">Add To Cart</button>
+           
+        </div>
+        <div class="box4">
+            <img src="Image/maraclemorning.jpg" alt="">
+            <h4 class="title">Featured Book </h4>
+            <h3>$15.99 <span><small><del><h5>$20.99</h5></del></small></span></h3> 
+            <button class="btn-cart">Add To Cart</button>
+           
+        </div>
+        <div class="box5">
+            <img src="Image/theonething.jpg" alt="">
+            <h4 class="title">Featured Book </h4>
+            <h3>$15.99 <span><small><del><h5>$20.99</h5></del></small></span></h3> 
+            <button class="btn-cart">Add To Cart</button>
+           
+        </div>
+        
+    </div>
+
+
+</div>
+
+
+
+</div>
+
+<!-- ===========================>> Contect <<========================= -->
+
+<div data-aos="fade-up" data-aos-duration="3000" style="transition: 3s;">
+<div class="contect" id="contect">
+    
+    <div class="contect-box">
+            <br><p style="font-size: 20px;color: rgb(109, 103, 103);">Subscribe for Latest Update <br><br></p>
+            <input type="text" name="email" placeholder="Enter your email" id=""><br><br>
+            <input type="text" name="email" placeholder="Enter your password" id=""><br><br>
+            <button style="width: 100px;height: 30px;background-color: rgb(13, 148, 83);border-radius: 5px;margin-bottom: 50px;">Subscribe</button>
+        </div>
+   
+</div>
+
+
+</div>
+
+
+<!-- ===========================>> CLIENT <<========================= -->
+
+
+
+<div data-aos="zoom-in-down" style="transition: 3s;">
+<div class="client" id="client">
+    <br><h2 style="text-align: center">Client Reviews</h2>
+    <div class="client-box">
+        <div class="box1">
+            <img src="Image/posterbankabc.jpg" alt="">
+            <h3>Phan Phak</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero repudiandae molestias distinctio aliquam doloribus maxime assumenda quibusdam architecto non excepturi autem, pariatur alias a fuga.</p>
+        </div>
+        <div class="box1">
+            <img src="Image/posterbankabc.jpg" alt="">
+            <h3>Khun Sovath</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero repudiandae molestias distinctio aliquam doloribus maxime assumenda quibusdam architecto non excepturi autem, pariatur alias a fuga.</p>
+        </div>
+        <div class="box1">
+            <img src="Image/posterbankabc.jpg" alt="">
+            <h3>Vang Vuth</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero repudiandae molestias distinctio aliquam doloribus maxime assumenda quibusdam architecto non excepturi autem, pariatur alias a fuga.</p>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<!-- ===========================>> Blogs <<========================= -->
+
+<div data-aos="fade-up" data-aos-duration="3000" style="transition: 3s;">
+
+<div class="blogs" id="blogs">
+    <h2 style="text-align: center;">Our Blogs</h2>
+    <div class="blogs-box">
+        <div class="box1">
+            <img src="Image/posterbankabc.jpg" alt="">
+            <div class="paragraph">
+
+                <h3>Top Read of TheMonth</h3><br>
+                <small>Discover the Most Popular books Readers Are Loving This Season. Find Your Next Great Read Today!</small><br>
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <div class="box2">
+            <img src="Image/posterbankaba2.jpg" alt="">
+            <div class="paragraph">
+
+                <h3>Top Read of TheMonth</h3><br>
+                <small>Discover the Most Popular books Readers Are Loving This Season. Find Your Next Great Read Today!</small><br>
+                <button>Read More</button>
+            </div>
+        </div>
+
+
+        <div class="box3">
+            <img src="Image/posterbankabc.jpg" alt="">
+            <div class="paragraph">
+
+                <h3>Top Read of TheMonth</h3><br>
+                <small>Discover the Most Popular books Readers Are Loving This Season. Find Your Next Great Read Today!</small><br>
+                <button>Read More</button>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+</div>
+
+
+<!-- ===========================>> Footer <<========================= -->
+
+<div data-aos="fade-up" data-aos-duration="3000" style="transition: 3s;">
+
+<div class="footer">
+    <div class="footer-box">
+        <div class="box1">
+            <h3>Our Locations</h3>
+            <hr>
+            <p>India</p>
+            <p>USA</p>
+            <p>Russia</p>
+            <p>France</p>
+            <p>Japan</p>
+            <p>Africa</p>
+        </div>
+        <div class="box2">
+            <h3>Quick Links</h3>
+            <hr>
+            <p> Home</p>
+            <p>Featured</p>
+            <p>Arrivals</p>
+            <p>Blogs</p>
+            <p>Reviews</p>
+            <p>Meet Our Team</p>
+        </div>
+        <div class="box3">
+            <h3>Exatra Links</h3>
+            <hr>
+            <p>Account info</p>
+            <p>Ordered Items</p>
+            <p>Privacy Pollicy</p>
+            <p>Payment Method</p>
+            <p>Our Services</p>
+            <p>History</p>
+        </div>
+        <div class="box4">
+            <h3>Contect Info</h3>
+            <hr>
+            <p><small>+855 979778260</small></p>
+            <p><small>+855 972515955</small></p>
+            <p><small><a href="">phanphak639@gmail.com</a></small></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>
+
+<script>
+    function cart(){
+        $(".Addcart").load(alert("You Successe!"));
+    }
+</script>
+
+
+
+
